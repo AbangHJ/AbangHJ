@@ -1,209 +1,323 @@
 * {
-  box-sizing: border-box;
-}
+    box-sizing: border-box;
+  }
+  
+  html, body,
+  ul, ol, li,
+  h1, h2, h3, h4, h5, h6, div {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Lucida Grande";
 
-body {
-  margin: 0;
-  font-family: "Lucida Grande";
-}
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .clear {
+    clear: left;
+  }
+  
+  .container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
 
-a {
-  text-decoration: none;
-}
-
-.clear {
-  clear: left;
-}
-
-.container {
-  max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
-}
-
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
-}
-
-.top-wrapper p {
-  opacity: 0.7;
-  margin-bottom: 3px;
-}
-
-.btn-wrapper {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.btn-wrapper p {
-  margin: 10px 0;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-/* Tambahkan CSS untuk menu-icon */
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  /* Gantikan property display ke none */
-  display:  none;
+  }
+  .slo{
+    font-size: 24px;
+    font-style: bold;
+    padding: 12px 24px;
+    color: rgb(228, 3, 3);
+    display: inline-block;
+    opacity: 0.9;
+    border-radius: 4px;
+    text-align: center;
+  }
+  h2{
+      font-size: 72px;
   }
 
-
-
-.lesson-wrapper {
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
+  h3{
+    font-size: 48px;
 }
 
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
+  .slo:hover{
+      opacity: 1;
+  }
+  
+  .top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url(https://wallpaperaccess.com/full/1190585.jpg);
+    background-size: cover;
+    color: rgb(14, 0, 0,);
+    text-align: center;
+    opacity: 0.7;
+  }
+  
+  .top-wrapper h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .top-wrapper p {
+    opacity: 0.7;
+    margin-bottom: 3px;
+  }
+  
+  .btn-wrapper {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .btn-wrapper p {
+    margin: 10px 0;
+  }
+  
+  .signup {
+    background-color: #239b76;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+    margin-right: 10px;
+  }
+  
+  .twitter {
+    background-color: #55acee;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .fa {
+    margin-right: 5px;
+  }
+  
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: #eafbff;
+    position :fixed;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    width: 124px;
+    margin-top: 10px;
+  }
+  
+  .header-left {
+    float: left;
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: -25px;
+    font-family: 'Lucida Grande';
+    font-size: 24px;
+    font-style: initial;
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 20px;
+    color: rgb(6, 82, 133);
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .lesson-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+  }
+  
+  .heading h2 {
+    font-weight: normal;
+  }
+  
+  .lesson {
+    float: left;
+    width: 25%;
+  }
+  
+  .lesson-icon {
+    position: relative;
+  }
+  
+  .lesson-icon p {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    color: rgb(136, 2, 2);
+    font-size: 24px;
+  }
+  
+  .txt-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 70px;
+    font-size: 15px;
+    color: black;
+    text-align: justify;
+  }
+  
+  .heading h3 {
+    font-weight: normal;
+  }
+  
+  .message-wrapper {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+  
+  .message {
+    padding: 15px 40px;
+    background-color: #5f5dca;
+    cursor: pointer;
+    box-shadow: 0 7px #0d0672;
+  }
+  
+  .message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+  
+  footer img {
+    width: 125px;
+  }
+  
+  footer p {
+    color: #a70404;
+    font-size: 12px;
+    
+  }
+  
+  footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: lightblue;
+  }
+  
+  /* Ketik code Anda dibawah */
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
+  }
+
+  .lesson-icon img{
+    width: 204px;
+    height: 249px;
+  }
+
+  .footer-right {
+    float: right;
+    margin-right: 25px;
+    font-family: 'Gill Sans';
+    top: 20px;
+  }
+
+  .contact-form input{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+    top: 20px;
+    font-family: "Lucida Grande";
+  }
+  .contact-form{
+  padding-top: 100px;
+  }
+
+  .contact-form textarea{
+    width: 400px;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+    top: 20px;
+    font-family: "Lucida Grande";
+  }
+
+.section-title{
+  padding: 20px;
+}
+ 
+.dark-mode{
+  background-color: black;
+  color: white;
+
 }
 
-.heading h2 {
-  font-weight: normal;
+.judulblog{
+  font-size: 48px;
+  padding-left: 30px;
+
 }
 
-.lesson {
-  float: left;
-  width: 25%;
+.blog h3{
+  padding-left: 30px;
+  top: 20px;
+}
+.isiblog{
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 200px;
+  font-size: 24px;
+  text-align: justify;
+}
+.isiblog img{
+  width: 700px;
+  padding-left: 30px;
 }
 
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 44%;
-  width: 100%;
+.dark-mode {
+  background-color: black;
   color: white;
 }
 
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 15px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
-}
-
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+.dm {
+  padding: 40px;
 }
